@@ -1,0 +1,30 @@
+<app-header-menu></app-header-menu>
+<p>
+
+  "Given the choice, whether to rule a corrupt and failing empire, or to challenge the fate for another throw, a better
+  throw against one's destiny. What was the king to do?"
+</p>
+<p>
+  Welcome home {{warrior.name}}!
+</p>
+
+<p> Your base feats: </p>
+<div class="stats-primary">
+  Strength: {{warrior.strength}}<button type="button">+</button><button type="button">Trenuj!</button><button type="button">Trenuj maks!</button>
+  Agility: {{warrior.agility}}<button type="button">+</button><button type="button">Trenuj!</button><button type="button">Trenuj maks!</button>
+</div>
+
+
+<p>Your secondary feats:</p>
+<div class="stats-secondary">
+  Attack: {{warrior.attack}}<button type="button">+</button><button type="button">Trenuj!</button><button type="button">Trenuj maks!</button>
+  Defense: {{warrior.defense}}<button type="button">+</button><button type="button">Trenuj!</button><button type="button">Trenuj maks!</button>
+  Vitality: {{warrior.vitality}}<button type="button">+</button><button type="button">Trenuj!</button><button type="button">Trenuj maks!</button>
+</div>
+<p>Punky życia: {{warrior.currentHitpoints}}</p>
+
+DEV----Warrior properties----DEV
+ID: {{warrior.id}}
+Gold: {{warrior.gold}}
+Diamonds: {{warrior.diamonds}}
+<app-footer-main></app-footer-main>
