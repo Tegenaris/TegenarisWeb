@@ -1,0 +1,3 @@
+sudo cp /etc/hosts /etc/hosts.back
+sudo cp /home/jez/Programs/updateHosts/hosts /etc/hosts
+

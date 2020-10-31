@@ -1,0 +1,26 @@
+#sowka {
+    float: left;
+    font-style: italic;
+    margin-left: 35px;
+    width: 40%;
+}
+#marcin {
+    float: right;
+	font-style: italic;
+    margin-right: 35px;
+    width: 40%;
+}
+#welcome {
+    font-size: 19pt;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+}
+#opisy {
+	height: 315px;
+    margin: 0 auto;
+    width: 75%;
+}
+#sowkaPic, #marcinPic {
+    width: 100px;
+}

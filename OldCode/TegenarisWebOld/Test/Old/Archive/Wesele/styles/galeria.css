@@ -1,0 +1,11 @@
+body {
+	background-color: black;
+}
+#slider > img {
+    margin-left: 20px;
+    width: 50%;
+}
+
+#slider {
+    height: 800px;
+}

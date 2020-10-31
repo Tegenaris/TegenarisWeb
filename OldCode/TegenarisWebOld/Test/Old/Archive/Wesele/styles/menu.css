@@ -1,0 +1,59 @@
+body {
+    background-color: #0F243E;
+    color: #FFFFFF;
+    font-family: cursive;
+    margin: 0 auto;
+}
+#menu {
+    background-color: #808080;
+    clear: both;
+    margin: 0 0 20px;
+    padding: 10px;
+    width: 98%;
+}
+#menu > span {
+    margin-left: 20px;
+}
+#menu > span:hover {
+    color: #000000;
+    cursor: pointer;
+}
+#menutitle {
+    color: #FFFF00;
+    font-size: 20pt;
+    margin-left: 10px;
+}
+#sowa {
+    float: left;
+    height: 200px;
+    width: 20%;
+}
+
+#wesele {
+    font-size: 26pt;
+    margin: 75px auto 0;
+    width: 396px;
+}
+#head1 {
+    clear: both;
+    height: 205px;
+}
+#Invite {
+    float: left;
+    width: 59%;
+    font-size: 26pt;
+}
+#jez {
+    float: right;
+    height: 200px;
+    width: 20%;
+}
+a {
+    color: #FFFFFF;
+}
+a:hover {
+    color: #000000;
+}
+#impinfo {
+	color: #FFFF00;
+}
