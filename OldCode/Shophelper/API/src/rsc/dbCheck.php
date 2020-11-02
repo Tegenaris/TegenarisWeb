@@ -1,6 +1,7 @@
 <?php
 	#Connect to localhost MySQL
-	$ignoreServer = true;
+	include('APIResources/environmentalConfig.php');
+
 	if ($ignoreServer){
 		define('host', 'localhost'); //usually localhost  
 		define('username', 'Jez'); //your username assigned to your database  
