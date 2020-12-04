@@ -20,14 +20,18 @@
 #	127.0.0.1       localhost
 #	::1             localhost
 
+#Dopamine rush
 127.0.0.1 www.facebook.com
+127.0.0.1 www.youtube.com
+127.0.0.1 lichess.org
+
+#News
 127.0.0.1 epoznan.pl
 127.0.0.1 e-lubon.pl
+
+#Procrastination
 127.0.0.1 anonimowe.pl
 127.0.0.1 joemonster.org
 127.0.0.1 piekielni.pl
 127.0.0.1 demotywatory.com
 127.0.0.1 mistrzowie.org
-127.0.0.1 youtube.com
-127.0.0.1 www.youtube.com
-127.0.0.1 lichess.org
