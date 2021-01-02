@@ -20,18 +20,45 @@
 #	127.0.0.1       localhost
 #	::1             localhost
 
-#Dopamine rush
+#-----------Local-----------#
+
+
+#-----------Dopamine rush
 127.0.0.1 www.facebook.com
 127.0.0.1 www.youtube.com
 127.0.0.1 lichess.org
 
-#News
+#-----------News
 127.0.0.1 epoznan.pl
 127.0.0.1 e-lubon.pl
 
-#Procrastination
+#-----------Global-----------#
+
+#-----------Procrastinate
 127.0.0.1 anonimowe.pl
 127.0.0.1 joemonster.org
 127.0.0.1 piekielni.pl
 127.0.0.1 demotywatory.com
 127.0.0.1 mistrzowie.org
+127.0.0.1 armorgames.com
+127.0.0.1 www.armorgames.com
+127.0.0.1 demotywatory.com
+127.0.0.1 demotywatory.pl
+127.0.0.1 www.demotywatory.pl
+
+#-----------Reklamy
+127.0.0.1 www.gry.jeja.pl
+127.0.0.1 gry.jeja.pl
+127.0.0.1 www.jeja.pl
+127.0.0.1 jeja.pl
+127.0.0.1 gemius.pl
+127.0.0.1 www.gemius.pl
+127.0.0.1 dream-marriage.com
+127.0.0.1 www.dream-marriage.com
+127.0.0.1 pingpusher.pw
+127.0.0.1 statscounter.top
+127.0.0.1 corneliuspettus.com
+127.0.0.1 friendsmu.com
+127.0.0.1 userexperiencestatics.net
+127.0.0.1 idm.hit.gemius.pl/
+127.0.0.1 www.idm.hit.gemius.pl/
