@@ -1,0 +1,20 @@
+$big-coin-size: 15%;
+$small-coin-size: 5%;
+
+@keyframes poke-coin {
+    0%   {width:$big-coin-size}
+    80%  {width:$small-coin-size}
+    100% {width:$big-coin-size}
+  }
+
+#coin-main{
+    width:$big-coin-size;
+    
+}
+.coin-touched{
+    animation-name: poke-coin;
+    animation-duration: 0.5s;
+}
+.coin-untouched{
+    width:$big-coin-size;
+}

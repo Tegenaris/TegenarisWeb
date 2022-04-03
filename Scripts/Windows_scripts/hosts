@@ -1,0 +1,64 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+
+#-----------Local-----------#
+
+
+#-----------Dopamine rush
+127.0.0.1 www.facebook.com
+127.0.0.1 www.youtube.com
+127.0.0.1 lichess.org
+
+#-----------News
+127.0.0.1 epoznan.pl
+127.0.0.1 e-lubon.pl
+
+#-----------Global-----------#
+
+#-----------Procrastinate
+127.0.0.1 anonimowe.pl
+127.0.0.1 joemonster.org
+127.0.0.1 piekielni.pl
+127.0.0.1 demotywatory.com
+127.0.0.1 mistrzowie.org
+127.0.0.1 armorgames.com
+127.0.0.1 www.armorgames.com
+127.0.0.1 demotywatory.com
+127.0.0.1 demotywatory.pl
+127.0.0.1 www.demotywatory.pl
+
+#-----------Reklamy
+127.0.0.1 www.gry.jeja.pl
+127.0.0.1 gry.jeja.pl
+127.0.0.1 www.jeja.pl
+127.0.0.1 jeja.pl
+127.0.0.1 gemius.pl
+127.0.0.1 www.gemius.pl
+127.0.0.1 dream-marriage.com
+127.0.0.1 www.dream-marriage.com
+127.0.0.1 pingpusher.pw
+127.0.0.1 statscounter.top
+127.0.0.1 corneliuspettus.com
+127.0.0.1 friendsmu.com
+127.0.0.1 userexperiencestatics.net
+127.0.0.1 idm.hit.gemius.pl/
+127.0.0.1 www.idm.hit.gemius.pl/
