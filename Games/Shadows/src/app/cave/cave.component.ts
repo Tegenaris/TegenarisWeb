@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero';
+import { Goblin } from './goblin';
 
 @Component({
   selector: 'app-cave',
@@ -11,8 +13,15 @@ export class CaveComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  public exploreCave(){
-    alert("Explored");
+  hero = new Hero;
+  goblin = new Goblin;
+  public exploreCave() {
+    if (this.hero.strength > this.goblin.strength) {
+      console.log("won!");
+    }
+    else {
+      console.log("lost");
+    }
   }
 
 }
