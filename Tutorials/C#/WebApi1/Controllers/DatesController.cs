@@ -19,50 +19,32 @@ namespace WebApi1.Controllers
         public async System.Threading.Tasks.Task<HttpResponseMessage> GetStock()
         {
             string resultJson;
-            string dateInfo;
-
+            string dateInfo = "";
 
             ObjectCache StockInfoCache = MemoryCache.Default;
 
             CacheItemPolicy cacheItemPolicy = new CacheItemPolicy()
             { AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(15) };
 
-            //ObjectCache resultJsonfromCache = StockInfoCache.Get("resultJson");
-            bool found = StockInfoCache.Contains("resultJson");
+            bool found = StockInfoCache.Contains("dateInfo");
             if (found)
             {
-                resultJson = StockInfoCache.Get("resultJson").ToString();
+                //Retrieve data from cache
+                resultJson = StockInfoCache.Get("dateInfo").ToString();
             }
             else
             {
-
+                //Pull data from the actual API
                 dateInfo = await GetDateData(0);
-
-                var javaScriptSerializer = new JavaScriptSerializer();
-                var dateInfoJson = javaScriptSerializer.DeserializeObject(dateInfo);
-
-                //This is the formated response that needs to be cached
-                resultJson = javaScriptSerializer.Serialize(new { DateInfo = dateInfoJson });
-
-                StockInfoCache.Add("resultJson", resultJson, cacheItemPolicy);
+                StockInfoCache.Add("dateInfo", dateInfo, cacheItemPolicy);
             }
-            return Request.CreateResponse(HttpStatusCode.OK, resultJson, Configuration.Formatters.JsonFormatter);
+            return Request.CreateResponse(HttpStatusCode.OK, dateInfo, Configuration.Formatters.JsonFormatter);
         }
 
         private async System.Threading.Tasks.Task<string> GetDateData(int stockType)
         {
-            string url = null;
-            string jsonStock = null;
-            switch (stockType)
-            {
-                case 0: //
-                    url = "";
-                    break;
-
-                case 1: //
-                    url = "";
-                    break;
-            }
+            string url = "http://worldclockapi.com/api/json/est/now";
+            string dateJSON = null;
 
             //Parse to XML
             using (HttpClient httpClient = new HttpClient())
@@ -76,14 +58,14 @@ namespace WebApi1.Controllers
                     using (var reader = new StreamReader(await responseContent.ReadAsStreamAsync()))
                     {
                         // Write the output.
-                        string londonStockResponse = await reader.ReadToEndAsync();
-                        XmlDocument xmlStockResponse = new XmlDocument();
-                        xmlStockResponse.LoadXml(londonStockResponse);
-                        jsonStock = JsonConvert.SerializeXmlNode(xmlStockResponse);
+                        dateJSON = await reader.ReadToEndAsync();
+                        //XmlDocument xmlStockResponse = new XmlDocument();
+                        //xmlStockResponse.LoadXml(londonStockResponse);
+                        //jsonStock = JsonConvert.SerializeXmlNode(xmlStockResponse);
                     }
                 }
             }
-            return jsonStock;
+            return dateJSON;
         }
     }
 }
