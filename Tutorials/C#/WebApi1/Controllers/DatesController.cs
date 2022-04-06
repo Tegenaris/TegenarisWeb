@@ -14,6 +14,7 @@ namespace WebApi1.Controllers
 {
     public class DatesController : ApiController
     {
+        //TODO - put caching in a different function
         [System.Web.Http.HttpGet]
         [Route("DateApi/GetDate")]
         public async System.Threading.Tasks.Task<HttpResponseMessage> GetStock()
