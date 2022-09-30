@@ -9,6 +9,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <NameOfLastUsedPublishProfile>C:\Users\mjw58727\source\repos\MyProjects\TegenarisWeb\Tutorials\C#\Marcin.APIs.Examples\CurrentDateApi\Properties\PublishProfiles\MarcinTestAPi - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
