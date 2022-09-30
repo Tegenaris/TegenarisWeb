@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace WebApi1
+namespace CurrentDateApi
 {
     public static class WebApiConfig
     {

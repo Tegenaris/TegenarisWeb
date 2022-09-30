@@ -1,16 +1,9 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Net;
 using System.Net.Http;
-using System.Runtime.Caching;
 using System.Web.Http;
-using System.Web.Script.Serialization;
-using System.Xml;
 
-namespace WebApi1.Controllers
+namespace CurrentDateApi.Controllers
 {
     public class DatesController : ApiController
     {
@@ -19,26 +12,29 @@ namespace WebApi1.Controllers
         [Route("DateApi/GetDate")]
         public async System.Threading.Tasks.Task<HttpResponseMessage> GetStock()
         {
-            string resultJson;
-            string dateInfo = "";
+            string dateInfo = await GetDateData(0);
 
-            ObjectCache StockInfoCache = MemoryCache.Default;
+            #region PullDateCache
+            //string resultJson;
+            //ObjectCache StockInfoCache = MemoryCache.Default;
 
-            CacheItemPolicy cacheItemPolicy = new CacheItemPolicy()
-            { AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(15) };
+            //CacheItemPolicy cacheItemPolicy = new CacheItemPolicy()
+            //{ AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(15) };
 
-            bool found = StockInfoCache.Contains("dateInfo");
-            if (found)
-            {
-                //Retrieve data from cache
-                resultJson = StockInfoCache.Get("dateInfo").ToString();
-            }
-            else
-            {
-                //Pull data from the actual API
-                dateInfo = await GetDateData(0);
-                StockInfoCache.Add("dateInfo", dateInfo, cacheItemPolicy);
-            }
+            //bool found = StockInfoCache.Contains("dateInfo");
+            //if (found)
+            //{
+            //    //Retrieve data from cache
+            //    resultJson = StockInfoCache.Get("dateInfo").ToString();
+            //}
+            //else
+            //{
+            //    //Pull data from the actual API
+            //    string dateInfo = await GetDateData(0);
+            //    StockInfoCache.Add("dateInfo", dateInfo, cacheItemPolicy);
+            //}
+            #endregion
+
             return Request.CreateResponse(HttpStatusCode.OK, dateInfo, Configuration.Formatters.JsonFormatter);
         }
 
