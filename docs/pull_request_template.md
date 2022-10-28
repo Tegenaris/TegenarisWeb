@@ -1,0 +1,2 @@
+ - [ ] Checkbox not checked
+ - [X] Checkbox checked
