@@ -24,13 +24,16 @@
 
 
 #-----------Dopamine rush
-127.0.0.1 www.facebook.com
-127.0.0.1 www.youtube.com
-127.0.0.1 lichess.org
+#127.0.0.1 www.facebook.com
+#127.0.0.1 facebook.com
+#127.0.0.1 lichess.org
 
 #-----------News
-127.0.0.1 epoznan.pl
-127.0.0.1 e-lubon.pl
+#127.0.0.1 epoznan.pl
+#127.0.0.1 e-lubon.pl
+#127.0.0.1 wp.pl
+#127.0.0.1 interia.pl
+#127.0.0.1 www.interia.pl
 
 #-----------Global-----------#
 
@@ -60,5 +63,5 @@
 127.0.0.1 corneliuspettus.com
 127.0.0.1 friendsmu.com
 127.0.0.1 userexperiencestatics.net
-127.0.0.1 idm.hit.gemius.pl/
-127.0.0.1 www.idm.hit.gemius.pl/
+127.0.0.1 idm.hit.gemius.pl
+127.0.0.1 www.idm.hit.gemius.pl
